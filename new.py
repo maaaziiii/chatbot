@@ -11,7 +11,7 @@ class NegotiationBot:
         self.lower_price_limit = self.product_price - self.discount_threshold
 
     def start_negotiation(self):
-        return f"Welcome to the negotiation! The initial price for the product is ${self.product_price}." \
+        return f"Welcome! The initial price for the product is ${self.product_price}." \
                f"What do you think? (Type 'accept', 'reject', or propose a 'counteroffer')"
 
     def handle_user_input(self, user_input):
