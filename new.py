@@ -1,7 +1,7 @@
 import random
-import requests  # To send requests to the language model API
+import requests  
 
-# Assuming there's a setup for authentication and endpoint
+
 API_KEY = 'AIzaSyD4EDOxODrl69UoVpycnCiCK3JOSOxrWl8'
 API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyD4EDOxODrl69UoVpycnCiCK3JOSOxrWl8'
 
@@ -56,7 +56,6 @@ def main():
 
         print("Bot:", response)
         
-        # End the conversation if the deal is closed
         if "deal is closed" in response or "I'll sell it for" in response:
             break
 
