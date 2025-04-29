@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarBot - Your Car Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chatbox">
+    <div class="chatbox__support hidden">
+        <div class="chatbox__header">
+            <div class="chatbox__image--header">
+                <img src="https://img.icons8.com/color/48/car--v1.png" alt="Car Icon" width="48" height="48">
+            </div>
+            <div class="chatbox__content--header">
+                <h4 class="chatbox__heading--header">CarBot Support</h4>
+                <p class="chatbox__description--header">Hello! Need help with your car?</p>
+            </div>
+        </div>
+        <div class="chatbox__messages"></div>
+        <div class="chatbox__footer">
+            <input type="text" placeholder="Type your message...">
+            <button class="chatbox__send--footer send__button">Send</button>
+        </div>
+    </div>
+    <div class="chatbox__button">
+        <button><img src="https://img.icons8.com/fluency/48/chat.png" alt="Chat Icon"></button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='front.js') }}"></script>
+</body>
+</html>
+]
+  
